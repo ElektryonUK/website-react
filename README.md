@@ -1,70 +1,76 @@
-# Getting Started with Create React App
+# NovaGrid
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+NovaGrid is a cutting-edge, community-driven mining pool management platform designed for simplicity, transparency, and high performance. It provides users with real-time stats, secure payouts, and advanced features to help you get the most out of your mining experience. 
 
-## Available Scripts
+This repository contains the code for the **NovaGrid** website, which serves as the frontend for interacting with mining pools, monitoring stats, and controlling your mining configuration. 
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🚀 Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Real-Time Pool Stats:** View stats for multiple mining pools, including hashrates, blocks found, connected miners, and more.
+- **User-Friendly Dashboard:** Intuitive interface to track your mining progress and rewards.
+- **Slash Command Integration:** Interact with the bot to get real-time stats and updates on your pool's performance.
+- **PPLNS and Solo Pools:** Support for multiple types of pool configurations, including PPLNS and solo mining.
+- **Discord Bot Integration:** Get updates directly in Discord, such as new blocks, miner performance, and more.
+- **Mining Instructions:** Step-by-step guides to get your miner up and running on the pool.
+- **Pool-Specific Information:** Each pool has its own dedicated channel and stats page for easy access.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🛠️ Technologies Used
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Frontend:** React.js for building a responsive and dynamic user interface.
+- **Backend:** Node.js and MiningCore API to manage and fetch pool stats.
+- **Discord Integration:** Python and discord.py for building the interactive bot.
+- **Database:** SQLite (or other database options depending on your configuration).
+- **Hosting:** Deployed on a VPS with Nginx and SSL support.
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🌐 Deployment
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+If you’re deploying **NovaGrid** to a production environment, make sure to:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Configure **Nginx** as a reverse proxy for the React app.
+- Set up **SSL** using Let’s Encrypt (or your preferred SSL provider).
+- Ensure the backend is running in a secure and scalable manner, possibly using Docker containers.
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 💡 Usage
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Interact with the Bot
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The NovaGrid bot allows you to interact with the pool through Discord commands.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- **`/ping`**: Check if the bot is responsive.
+- **`/stats [pool]`**: View stats for the specified pool.
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🤝 Contributing
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+We welcome contributions from the community! If you’d like to contribute, please follow these steps:
 
-### Code Splitting
+1. **Fork the repository.**
+2. **Create a new branch** for your feature or bugfix.
+3. **Make your changes.**
+4. **Test your changes** thoroughly.
+5. **Submit a pull request.**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## 📑 License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 📞 Contact
 
-### Advanced Configuration
+For any inquiries or support requests, feel free to reach out to us via:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- Discord: Join our community on [Discord](https://discord.gg/FKZznSVrXj)
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
