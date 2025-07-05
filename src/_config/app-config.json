@@ -1,0 +1,7 @@
+{
+  "apiURL": "https://novagrid.online/api",
+  "discordURL": "https://discord.com/invite/TgtBnzxXv7",
+  "emailURL": "mailto:support@novagrid.online",
+  "poolsRefreshSeconds": 60,
+  "poolsRefreshWarningSeconds": 3
+}
