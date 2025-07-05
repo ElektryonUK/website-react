@@ -1,0 +1,100 @@
+@import "../../global.scss";
+
+.tile {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  font-size: 13px;
+  transition: 0.3s;
+
+  p {
+    font-weight: 300;
+  }
+}
+
+.pool,
+.faq {
+  position: relative;
+  display: block;
+  clear: both;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 16px;
+  margin: 8px;
+}
+
+.square {
+  width: 375px;
+  height: 375px;
+}
+
+.wallet,
+.wallet-detail,
+.wallet-data {
+  position: relative;
+  display: block;
+  clear: both;
+  box-sizing: border-box;
+  width: calc(100% - 16px);
+  padding: 16px;
+}
+
+.wallet-graph {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  width: calc(100% - 16px);
+  height: 256px;
+  padding: 16px 16px 56px 16px;
+}
+
+.data-graph {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0;
+  box-sizing: border-box;
+  width: calc(100% - 16px);
+  padding: 16px 16px 24px 16px;
+}
+
+.statistics-data {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  width: calc(100% - 16px);
+  padding: 16px;
+
+  td {
+    text-align: right;
+  }
+
+  td:first-child {
+    text-align: left;
+    color: $theme-secondary;
+  }
+}
+
+@media (min-width: 768px) {
+  .wallet-detail {
+    width: calc(50% - 16px);
+  }
+}
+
+@media (max-width: 1080px) {
+  .data-graph {
+    flex: none;
+    flex-shrink: 0;
+    height: 256px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .wallet-detail {
+    width: calc(25% - 16px);
+  }
+
+  .wallet-data {
+    width: calc(50% - 16px);
+  }
+}

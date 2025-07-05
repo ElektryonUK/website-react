@@ -1,0 +1,72 @@
+@import "./global.scss";
+
+.app {
+  text-align: center;
+  letter-spacing: 2px;
+  cursor: default;
+
+  .background {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(135deg, $theme-secondary 0%, $theme-primary 60%);
+  }
+
+  .background-cover {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.25);
+  }
+
+  .app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-size: calc(10px + 2vmin);
+    color: white;
+
+    h1 {
+      font-size: 36px;
+      font-weight: 300;
+    }
+
+    h2 {
+      font-size: 28px;
+      font-weight: 300;
+    }
+
+    h3 {
+      font-size: 20px;
+      font-weight: 300;
+    }
+
+    .primary {
+      color: $theme-primary;
+    }
+
+    .primary-faded {
+      color: $theme-primary-faded;
+    }
+
+    .secondary {
+      color: $theme-secondary;
+    }
+
+    .secondary-faded {
+      color: $theme-secondary-faded;
+    }
+
+    .text-medium {
+      font-weight: 500;
+    }
+
+    .text-bold {
+      font-weight: 700;
+    }
+
+    .text-italic {
+      font-style: italic;
+    }
+  }
+}

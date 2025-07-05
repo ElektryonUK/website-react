@@ -1,3 +1,24 @@
+## 📁 _config
+
+#### 📄 app-config.json
+
+## 📁 _test
+
+#### 📄 test-data.json
+
+## 📁 assets [images etc.]
+
+## 📁 components [app functions]
+
+## 📁 pages [app routes]
+
+## 📁 services [api functions]
+
+## 📄 global.scss
+
+<br>
+<br>
+
 # NovaGrid
 
 NovaGrid is a cutting-edge, community-driven mining pool management platform designed for simplicity, transparency, and high performance. It provides users with real-time stats, secure payouts, and advanced features to help you get the most out of your mining experience. 

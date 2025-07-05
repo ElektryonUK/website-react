@@ -1,0 +1,288 @@
+@import "../../global.scss";
+
+.pool-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  h1,
+  h2,
+  h3 {
+    margin: auto;
+    text-overflow: ellipsis;
+  }
+
+  h3:first-of-type {
+    margin-right: 8px;
+  }
+
+  .header-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    flex: 0 0 auto;
+    justify-content: space-between;
+
+    .main-container {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 16px;
+
+      .img-container {
+        position: relative;
+        display: inline-block;
+        width: 64px;
+        height: 64px;
+        padding: 8px;
+        border-radius: 8px;
+        background-color: $black-2;
+        box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.5);
+        overflow: hidden;
+
+        img {
+          width: 100%;
+          height: 100%;
+          border-radius: 8px;
+        }
+      }
+
+      .text-container {
+        position: relative;
+        display: block;
+        width: 70%;
+        float: right;
+        padding-left: 16px;
+        justify-content: space-between;
+
+        .coin-name {
+          text-align: right;
+        }
+      }
+    }
+
+    .footer-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      width: 100%;
+
+      .btn-container {
+        display: flex;
+        align-items: flex-end;
+        font-weight: 500;
+        text-align: center;
+        vertical-align: baseline;
+
+        .btn-color-mode-switch {
+          position: relative;
+          display: inline-block;
+          margin: 0;
+          font-weight: 500;
+
+          > label.btn-color-mode-switch-inner {
+            position: relative;
+            display: block;
+            width: 170px;
+            height: 30px;
+            margin: 0;
+            border-radius: 8px;
+            background: $black-1;
+            font-weight: 500;
+            box-shadow: 0 0 2px 0 white;
+            overflow: hidden;
+            cursor: pointer;
+            transition: all 0.2s ease;
+
+            &:before {
+              position: absolute;
+              top: 8px;
+              right: 25px;
+              font-size: 13px;
+              line-height: 14px;
+              font-weight: 500;
+              content: attr(data-on);
+              cursor: pointer;
+            }
+
+            &:after {
+              position: absolute;
+              left: 2px;
+              top: 2px;
+              width: 85px;
+              height: 14px;
+              padding: 5px 0;
+              background: $theme-primary-faded;
+              border: 1px solid $black-1;
+              color: $theme-secondary;
+              text-align: center;
+              border-radius: 6px;
+              font-size: 13px;
+              line-height: 14px;
+              font-weight: 500;
+              content: attr(data-off);
+              cursor: pointer;
+              transition: all 0.2s ease;
+            }
+
+            &.disabled:before {
+              color: rgba(255, 255, 255, 0.1);
+            }
+          }
+
+          input[type="checkbox"] {
+            position: absolute;
+            top: 0;
+            width: 50px;
+            height: 25px;
+            margin: 0;
+            opacity: 0;
+            z-index: 1;
+            cursor: pointer;
+          }
+
+          input[type="checkbox"]:checked + label.btn-color-mode-switch-inner {
+            background: $black-1;
+            color: #fff;
+
+            &:after {
+              left: 81px;
+              background: $theme-primary-faded;
+              color: $theme-secondary;
+              content: attr(data-on);
+            }
+
+            &:before {
+              left: 21px;
+              right: auto;
+              content: attr(data-off);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .badge-container {
+    display: flex;
+    gap: 8px;
+
+    .badge {
+      position: relative;
+      display: inline-block;
+      width: 26px;
+      height: 26px;
+      line-height: 26px;
+      text-align: center;
+      vertical-align: middle;
+      border: 2px solid #111;
+      border-radius: 8px;
+      background-color: $theme-primary-faded;
+      box-shadow: 0 0 4px 0 $theme-secondary;
+      color: $theme-secondary;
+      font-size: 13px;
+      font-weight: 500;
+      cursor: pointer;
+
+      &.selected {
+        color: goldenrod;
+      }
+    }
+  }
+
+  .card-table {
+    flex: 1 0 auto;
+    display: flex;
+    align-items: center;
+
+    table {
+      width: 100%;
+      column-width: 100px;
+      border-spacing: 0;
+      border-top: 2px solid $theme-primary-faded;
+
+      tr {
+        td {
+          font-size: 13px;
+          line-height: 16px;
+          padding: 4px 0;
+          border-bottom: 2px solid $theme-primary-faded;
+        }
+
+        .table-icon {
+          width: 10%;
+          padding-right: 8px;
+          color: $theme-secondary-faded;
+        }
+
+        .table-label {
+          width: 50%;
+          text-align: left;
+          color: rgba(255, 255, 255, 0.25);
+        }
+
+        .table-value {
+          width: 35%;
+          padding-right: 8px;
+          text-align: right;
+        }
+      }
+    }
+  }
+
+  .footer-container {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    flex: 0 0 auto;
+
+    .input-container {
+      float: left;
+      width: 50%;
+      padding: 0;
+
+      .btn-scrypt {
+        float: left;
+        width: 170px;
+        height: 30px;
+        background-color: $black-1;
+        color: $theme-primary;
+        box-shadow: 0 0 2px 0 white;
+        border: none;
+        border-radius: 8px;
+        font-size: 13px;
+        font-weight: 500;
+        letter-spacing: 4px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: $theme-secondary;
+          color: white;
+          box-shadow: none;
+        }
+      }
+    }
+
+    .networkHashrate-container {
+      position: relative;
+      display: flex;
+      align-items: center;
+      margin-left: auto;
+      line-height: 30px;
+
+      .data-metric {
+        display: flex;
+        align-items: center;
+        flex: 0 0 auto;
+
+        h1:first-of-type,
+        h2:first-of-type {
+          margin-right: 8px;
+        }
+      }
+    }
+  }
+}

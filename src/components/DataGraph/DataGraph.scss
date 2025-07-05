@@ -1,0 +1,27 @@
+.graph-header-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: fit-content;
+
+  h3 {
+    margin: 0;
+  }
+
+  .data-metric {
+    position: absolute;
+    padding-top: 8px;
+    right: 0;
+    display: flex;
+    align-items: center;
+    flex: 0 0 auto;
+
+    h1:first-of-type {
+      margin: 0 8px 0 0;
+    }
+
+    h1:last-of-type {
+      margin: 0;
+    }
+  }
+}

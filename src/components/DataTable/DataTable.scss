@@ -1,0 +1,38 @@
+@import "../../global.scss";
+
+.data-table-container {
+  h3 {
+    display: flex;
+    margin: auto 0;
+
+    b {
+      margin: auto 8px auto 0
+    }
+  }
+
+  th {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  thead tr:hover {
+    background: none;
+  }
+
+  tbody tr:hover {
+    background: $theme-primary-faded;
+  }
+
+  .traffic-light-green {
+    color: limegreen;
+  }
+
+  .traffic-light-amber {
+    color: gold;
+  }
+
+  .traffic-light-red {
+    color: red;
+  }
+}
